@@ -10,7 +10,7 @@
    }
   .parallax{
    /* The image used */
-    background-image: url(bg_header.jpg);
+    background-image: url(img/bg_header.jpg);
    /* Set a specific height */
     height: 500px; 
     position: relative;
@@ -31,7 +31,7 @@
     transition: 0.5s ease-in;
   }
    section{
-    background-image: url(bg_header.jpg);
+    background-image: url(img/bg_header.jpg);
     background-size: cover;
     width: 100%;
     height: 740px;
