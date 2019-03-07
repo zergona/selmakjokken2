@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INSPIRASJON</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="transparent_bg">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src="logo_white.png" alt="" class="icon" id="icon"></a>
+                <ul style = "margin-right: 1%;" class="right hide-on-med-and-down">
+                  <li><a href="#" class = 'navtext'>FORSIDE</a></li>
+                  <li><a href="#" class = 'navtext'>TJENESTER</a></li>
+                  <li class="active"><a href="#" class = 'navtext'>INSPIRASJON</a></li> <!-- Add class = "active" for active subpage -->
+                  <li><a href="#" class = 'navtext'>BOOK BEFARING</a></li>
+                  <li><a href="#" class = 'navtext'>CONTACT OSS</a></li>
+                </ul>
+             </div>
+        </nav>
+        
+        <div class="parallax">
+          <div class="trans_layer"> <!--Black layer with opacity-->
+          </div>
+        </div>
+
+        
+
+        <img src="fam.jpg" class = "upperImage responsive-img" alt="">
+        <div class="upperText">
+        <h3 style="margin-top: 11%;">LOREM IPSUM DOLOR</h3>
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit augue eget eleifend condimentum. Suspendisse vulputate hendrerit pellentesque. Cras eget hendrerit neque. Mauris sit amet accumsan magna, ac congue elit. Phasellus pretium velit non mi feugiat viverra. In sit amet condimentum tellus. Vivamus vel maximus est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum id purus volutpat porttitor. Integer scelerisque porttitor ligula, non egestas urna commodo eget. In ac interdum lorem. Aliquam iaculis interdum enim at porttitor.</p>
+        </div>
+        <div class="center-align" style="margin-top: 4%; margin-bottom: 4%;">
+        <a class="link1 waves-effect btn" style="width: 20%; background-color: #ef5350;"><i class="material-icons right">assignment</i>PROSJEKTER</a>  
+        <a class="link2 waves-effect btn" style="width: 20%; background-color: #ef5350;"><i class="material-icons right">collections</i>KATALOG</a>
+        <!--<a class="waves-effect red lighten-3 btn" style="width: 20%;"><i class="material-icons right">message</i>BLOGG</a>-->
+       </div>
+       <div id='details'>
+       <div id='prosjekter' class = "center-align prosjekter">
+          <h3>VÅRE PROSJEKTER</h3>
+          <h5>Fornøyde kunder er vår beste anbefaling</h5>
+          
+          <img src="technopolis.jpg" class = "imgLeft responsive-img" alt="">
+          <div class="textRight">
+            <h3 style="color: #ef5350; font-weight: lighter;">TECHNOPOLIS GROUP</h3>
+            <p style="text-align: justify;">Technopolis Group bidrar med erfarenhet og kunnskap om utdanning, forskning, teknikk og innovasjon, miljø- og energispørsmål, helsespørsmål samt regionale utviklingsspørsmål og entreprenørskap. Selma Kjøkken & Interiør har utformet resepsjonen i selskapets lokaler på Fornebu.</p>
+          </div>
+          <div style="clear:both;"></div>
+          <img src="subsea.jpg" class = "imgRight responsive-img" alt="">
+          <div class="textLeft">
+            <h3 style="color: #ef5350; font-weight: lighter;">SUBSEA 7</h3>
+            <p style="text-align: justify;">Subsea 7, en global leder innen engineering, konstruksjon og service, fra havbunn til overflate. I samarbeid med Vedal har Selma kjøkken & Interiør utformet resepsjon med bakvegg og kjøkkenområde til selskapets kontorer på Fornebu.</p>
+          </div>
+          <div style="clear:both;"></div>
+          <img src="sparebank.jpg" class = "imgLeft responsive-img" alt="">
+          <div class="textRight">
+            <h3 style="color: #ef5350; font-weight: lighter;">SPAREBANK 1 FORNEBU</h3>
+            <p style="text-align: justify;">Sparebank1 Fornebu. Her har Selma Kjøkken & Interiør innredet resepsjon, kontor, kjøkken og garderober. På kundelisten har vi også konferansesenter, utslillingshaller, sykehus, hoteller og kontor.</p>
+          </div>
+       </div>
+
+       <div id='katalog' class="center-align katalog">
+        <h3>KATALOG</h3>
+        <h5>Nas katalog je super mega kul katalog</h5>
+         <img src="subsea.jpg" class = "imgRight responsive-img" alt="">
+         <div class="textLeft">
+           <h3 style="color: #ef5350; font-weight: lighter;">SUBSEA 7</h3>
+           <p style="text-align: justify;">Subsea 7, en global leder innen engineering, konstruksjon og service, fra havbunn til overflate. I samarbeid med Vedal har Selma kjøkken & Interiør utformet resepsjon med bakvegg og kjøkkenområde til selskapets kontorer på Fornebu.</p>
+           <a class="waves-effect red lighten-1 btn" style="width: 50%;"><i class="material-icons right">arrow_downward</i>KATALOG</a>
+         </div>
+       </div>
+      </div>
+      <div style="clear:both;"></div>
+      <footer style="margin-top: 100px;">
+          <p style="text-align:center;">&copy;</p>
+      </footer>
+    </body>
+</html>
+
+<script>
+    var navText = $('.navtext'); // header navbar  
+  
+    $('#prosjekter').hide(); //hiding and showing content on click 
+    $('.katalog').hide();
+    $('.link1').click(function(){
+    $('.prosjekter').show();
+    $('.katalog').hide();
+    });
+
+    $('.link2').click(function(){
+    $('.prosjekter').hide();
+    $('.katalog').show();
+    });
+
+    $(document).ready(function(){ 
+         $(window).scroll(function(){ // scroll animation
+           if($(window).scrollTop() > 400){
+             $('nav').addClass('white'); // change nav to white bg
+             $('#icon').attr("src","logo_black.png"); // change logo to logo_black
+             $.each(navText, function () {
+                 navText.addClass('navtext'); // change text color in navbar
+             })
+           }else{
+             $('nav').removeClass('white'); // rollback to initial state of the navbar
+             $('#icon').attr("src","logo_white.png"); // rollback the logo
+             $.each(navText, function () {
+                 navText.removeClass('navtext'); // rollback the text color
+             })
+           }
+         });
+    });
+ </script>
