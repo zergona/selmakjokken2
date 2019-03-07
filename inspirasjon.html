@@ -25,10 +25,36 @@
         
         <div class="parallax">
           <div class="trans_layer"> <!--Black layer with opacity-->
+            <div class="row">
+                <div class="column">
+                  <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
+                    <h1 style="color: red; font-weight: lighter;">500+</h1>
+                    <h4>Satisfied Customers</h4>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
+                    <h1 style="color: red; font-weight: lighter;">2</h1>
+                    <h4 style="padding-bottom: 37px;">Stores</h4>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
+                      <h1 style="color: red; font-weight: lighter;">1000+</h1>
+                      <h4 style="padding-bottom: 37px;">Kitchens Made</h4>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
+                      <h1 style="color: red; font-weight: lighter;">∞</h1>
+                      <h4 style="padding-bottom: 37px;">Smiles</h4>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
 
-        
+        <div style="clear:Both;"></div>
 
         <img src="fam.jpg" class = "upperImage responsive-img" alt="">
         <div class="upperText">
@@ -85,7 +111,7 @@
 <script>
     var navText = $('.navtext'); // header navbar  
   
-    $('#prosjekter').hide(); //hiding and showing content on click 
+    $('#prosjekter').hide(); // hiding and showing content on click 
     $('.katalog').hide();
     $('.link1').click(function(){
     $('.prosjekter').show();
@@ -99,7 +125,7 @@
 
     $(document).ready(function(){ 
          $(window).scroll(function(){ // scroll animation
-           if($(window).scrollTop() > 400){
+           if($(window).scrollTop() > 80){
              $('nav').addClass('white'); // change nav to white bg
              $('#icon').attr("src","logo_black.png"); // change logo to logo_black
              $.each(navText, function () {
