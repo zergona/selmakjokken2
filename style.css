@@ -58,16 +58,13 @@
     color: black;
   }
   .upperImage{
-    width: 55%;
     margin-top: 5%;
-    box-shadow: 3px 3px 4px rgba(110, 110, 110, 0.3);
+    width: 100%;
   }
   .upperText{
-    width: 35%;
-    display: inline-block;
-    float: right;
-    margin-right: 5%;
     margin-top: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
     line-height: 0.85cm
   }
   .transparent_bg{
@@ -85,11 +82,11 @@
   .textLeft{
     margin-top: 90px;
     width: 50%;
-    height: 360px;
+    height: 100%;
     margin-left: 3.5%;
     line-height: 0.85cm;
     background-color: #eceff1;
-    padding: 40px 120px 60px 40px; 
+    padding: 40px 120px 85px 40px; 
     color: #3f3f3f;
     border: 1px solid rgba(110, 110, 110, 0.3); 
   }
@@ -104,12 +101,12 @@
   }
   .textRight{
     margin-top: 90px;
-    height: 360px;
+    height: 100%;
     width: 50%;
     margin-right: 3.5%;
     line-height: 0.85cm;
     background-color: #eceff1;
-    padding: 40px 40px 100px 120px; 
+    padding: 40px 40px 85px 120px; 
     color: #3f3f3f;
     border: 1px solid rgba(110, 110, 110, 0.3); 
     float: right;
@@ -118,35 +115,79 @@
   .hide{
     display: none;
   }
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 10% -5px;}
-  
-  /* Clear floats after the columns */
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
     padding: 16px;
     text-align: center;
     color: black;
   }
   
-  /* Responsive columns - one column layout (vertical) on small screens */
+  
   @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+    .imgLeft{
+      width: 96%;
       display: block;
-      margin-bottom: 20px;
+      margin: 20px 2% 0px 2%;
+      z-index: 0;
+      position: relative;
+    }
+    .textRight{
+      display: block;
+      width: 96%;
+      height: 100%;
+      margin: 0px 2% 0px 2%;
+      padding: 20px 15px 15px 15px;
+    }
+    .imgRight{
+      width: 96%;
+      display: block;
+      margin: 20px 2% 40px 2%;
+      z-index: 0;
+      position: relative;
+    }
+    .textLeft{
+      display: block;
+      width: 96%;
+      height: 100%;
+      margin: 30px 2% 0px 2%;
+      padding: 30px 15px 15px 15px;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 991px) {
+    .imgLeft{
+      width: 96%;
+      display: block;
+      margin: 20px 2% 0px 2%;
+      z-index: 0;
+      position: relative;
+    }
+    .textRight{
+      display: block;
+      width: 96%;
+      height: 100%;
+      margin: 0px 2% 0px 2%;
+      padding: 20px 15px 15px 15px;
+    }
+    .imgRight{
+      width: 96%;
+      display: block;
+      margin: 20px 2% 40px 2%;
+      z-index: 0;
+      position: relative;
+    }
+    .textLeft{
+      display: block;
+      width: 96%;
+      height: 100%;
+      margin: 30px 2% 0px 2%;
+      padding: 30px 15px 15px 15px;
     }
   }
