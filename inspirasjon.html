@@ -8,12 +8,18 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     </head>
 
     <body>
         <nav class="transparent_bg">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo"><img src="img/logo_white.png" alt="" class="icon" id="icon"></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-demo">
+                  <i class="material-icons" style="color: red;">menu</i>
+                </a>
                 <ul style = "margin-right: 1%;" class="right hide-on-med-and-down">
                   <li><a href="#" class = 'navtext'>FORSIDE</a></li>
                   <li><a href="#" class = 'navtext'>TJENESTER</a></li>
@@ -23,32 +29,40 @@
                 </ul>
              </div>
         </nav>
+        <ul class="sidenav" id="mobile-demo" style="z-index: 9999;">
+          <li><a href="#!" class="sidenav-close" style="margin-top: 5px;"><i class="material-icons" style="color: red;">close</i></a></li>
+          <li><a href="#" class = 'navtext'>FORSIDE</a></li>
+          <li><a href="#" class = 'navtext'>TJENESTER</a></li>
+          <li class="active"><a href="#" class = 'navtext'>INSPIRASJON</a></li> <!-- Add class = "active" for active subpage -->
+          <li><a href="#" class = 'navtext'>BOOK BEFARING</a></li>
+          <li><a href="#" class = 'navtext'>CONTACT OSS</a></li>
+        </ul>
         
         <div class="parallax">
           <div class="trans_layer"> <!--Black layer with opacity-->
             <div class="row" style="margin-top: 10%">
-                <div class="col s12 m12 l3 xl3">
+                <div class="col s12 m6 l3 xl3">
                   <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
                     <h1 style="color: red; font-weight: lighter;">500+</h1>
-                    <h4>Satisfied Customers</h4>
+                    <h4>SATISFIED CUSTOMERS</h4>
                   </div>
                 </div>
-                <div class="col s12 m12 l3 xl3">
+                <div class="col s12 m6 l3 xl3">
                   <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
                     <h1 style="color: red; font-weight: lighter;">2</h1>
-                    <h4 style="padding-bottom: 37px;">Stores</h4>
+                    <h4 style="padding-bottom: 37px;">STORES</h4>
                   </div>
                 </div>
-                <div class="col s12 m12 l3 xl3">
+                <div class="col s12 m6 l3 xl3">
                   <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
                       <h1 style="color: red; font-weight: lighter;">1000+</h1>
-                      <h4 style="padding-bottom: 37px;">Kitchens Made</h4>
+                      <h4 style="padding-bottom: 37px;">KITCHENS MADE</h4>
                   </div>
                 </div>
-                <div class="col s12 m12 l3 xl3">
+                <div class="col s12 m6 l3 xl3">
                   <div class="card" style="background-color: rgba(255, 255, 255, 0.8);">
                       <h1 style="color: red; font-weight: lighter;">∞</h1>
-                      <h4 style="padding-bottom: 37px;">Smiles</h4>
+                      <h4 style="padding-bottom: 37px;">SMILES</h4>
                   </div>
                 </div>
               </div>
@@ -127,7 +141,9 @@
     $('.prosjekter').hide();
     $('.katalog').show();
     });
-
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    });
     $(document).ready(function(){ 
          $(window).scroll(function(){ // scroll animation
            if($(window).scrollTop() > 80){
