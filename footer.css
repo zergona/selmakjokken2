@@ -1,0 +1,82 @@
+*{
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.element div{
+    font-size: 20px;
+    margin: auto;
+}
+
+footer{
+    display: block;
+    width: 100%;
+    background: rgb(195, 208, 214);
+}
+
+.element h2{
+    margin: 5px 0 !important;
+    font-size: 25px;
+}
+#footer{
+    margin: auto; 
+    max-width: 2000px;
+}
+
+#footer{
+    padding: 30px 150px;
+    width: 100%;
+    background: rgb(195, 208, 214);
+}
+
+#ostalo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    color: white;
+}
+
+#ostalo ul li{
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+#ostalo div{
+    padding: 5px 30px 5px 0px;
+}
+
+
+
+#footer img{
+    width: 300px;
+}
+
+@media only screen and (max-width: 1280px) {
+    
+   
+    #footer img{
+        width: 250px;
+        margin: auto;
+    }
+
+    #ostalo div, #ostalo h2{
+        padding: 5px 30px 5px 5px;
+    }
+
+    #ostalo{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        color: white;
+    }
+    #footer{
+        padding: 0;
+    }
+
+    #logo{
+        display: flex;
+    }    
+}

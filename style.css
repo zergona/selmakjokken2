@@ -8,7 +8,10 @@
     padding:0px 20px;
     z-index: 9999;
    }
-   
+   .button{
+    width: 20%; 
+    background-color: #ef5350;
+   }
   .parallax{
    /* The image used */
     background-image: url(img/bg_header.jpg);
@@ -123,7 +126,98 @@
     text-align: center;
     color: black;
   }
-  
+  .element div{
+    font-size: 20px;
+    margin: auto;
+  }
+
+  footer{
+    padding-top: 20px; 
+    border: 1px solid rgba(110, 110, 110, 0.3); 
+    display: block;
+    width: 100%;
+    background: #eceff1;
+    margin-top: 35px;
+  }
+  .subscribe{
+    margin-left: 10px;
+    margin-top: 1px;
+    background: transparent;
+    border: 1px solid rgb(30, 31, 31);
+    color:rgb(30, 31, 31);;
+    padding: 12px 20px;
+  }
+  .subscribe:hover{
+    border: 1px solid red;
+    color:red;
+    transition: 0.3s ease-in;
+  }
+  /* label color */
+  .input-field label {
+    color: black !important;
+  }
+  /* label focus color */
+  .input-field input[type=email]:focus + label {
+    color: red !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* valid color */
+  .input-field input[type=email].valid {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* invalid color */
+  .input-field input[type=email].invalid {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: red!important;
+  }
+  .links{
+    border-bottom: 1px solid rgb(30, 31, 31);
+    transition: 0.5s ease-in;
+    color:rgb(30, 31, 31);
+    text-align: center;
+    display: inline-block;
+  }
+  .cool-link {
+    display: inline-block;
+    color: rgb(30, 31, 31);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 5px 15px 5px;
+  }
+  .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(30, 31, 31);
+    transition: width .3s;
+}
+
+  .cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+  .btnTop{
+    background: transparent;
+    border: 1px solid rgb(30, 31, 31);
+    padding: 10px 10px;
+    color: rgb(30, 31, 31);
+  }
+  .btnTop:hover{
+    border: 1px solid red;
+    color: red;
+    transition: 0.2s ease-in;
+  }
+
   
   @media screen and (max-width: 600px) {
     .parallax{
@@ -145,10 +239,10 @@
       padding: 0.01%;
     }
     .card h1{
-      font-size: 40px;
+      font-size: 30px;
     }
     .card h4{
-      font-size: 30px;
+      font-size: 20px;
     }
     .upperImage{
       margin-top: 50px;
@@ -180,6 +274,12 @@
       height: 100%;
       margin: 30px 2% 0px 2%;
       padding: 30px 15px 15px 15px;
+    }
+    .link1{
+      width: 100%;
+    }
+    .link2{
+      width: 100%;
     }
   }
   @media screen and (min-width: 601px) and (max-width: 991px) {
