@@ -201,6 +201,12 @@
     background: rgb(30, 31, 31);
     transition: width .3s;
 }
+  .red{
+    color:red;
+  }
+  .black{
+    color: black;
+  }
 
   .cool-link:hover::after {
     width: 100%;

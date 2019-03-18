@@ -19,7 +19,7 @@
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo"><img src="img/logo_white.png" alt="" class="icon" id="icon"></a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-demo">
-                  <i class="material-icons" style="color: red;">menu</i>
+                  <i class="material-icons" id = "burger_menu">menu</i>
                 </a>
                 <ul style = "margin-right: 1%;" class="right hide-on-med-and-down">
                   <li><a href="#" class = 'navtext'>FORSIDE</a></li>
@@ -193,12 +193,14 @@
            if($(window).scrollTop() > 80){
              $('nav').addClass('white'); // change nav to white bg
              $('#icon').attr("src","img/logo_black.png"); // change logo to logo_black
+             $('#burger_menu').css("color","black");
              $.each(navText, function () {
                  navText.addClass('navtext'); // change text color in navbar
              })
            }else{
              $('nav').removeClass('white'); // rollback to initial state of the navbar
              $('#icon').attr("src","img/logo_white.png"); // rollback the logo
+             $('#burger_menu').css("color","white");
              $.each(navText, function () {
                  navText.removeClass('navtext'); // rollback the text color
              })
